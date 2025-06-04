@@ -86,12 +86,15 @@ api_key = "YOUR_OPENWEATHERMAP_API_KEY"
 - **Wind Speed by Weather**: Bar chart showing how average wind speed varies across different weather conditions (for example, clear, broken clouds, rain).
 - **Most Favorable Weather**: Identifies the single city (for example, Los Angeles, US) that offers the most comfortable combination of temperature, weather status, and wind speed at runtime.
 
-![Example: Top 5 Hottest Cities]
+![Example: Average Wind Speed by Weather Status]
 
 ![download](https://github.com/user-attachments/assets/6a7f7891-e15a-43eb-869f-6d1b1d67d3c8)
 
+![download (1)](https://github.com/user-attachments/assets/0f3953ea-efd6-437d-a174-145e6851ca81)
 
-![Example: Average Wind Speed by Weather Status]
+
+
+
 
 ## Extending This Project
 - **Additional Metrics**: Compute humidity or “feels like” temperature comparisons.
