@@ -62,3 +62,40 @@ pip install pandas requests matplotlib pyowm sqlite3
 
 api_key = "YOUR_OPENWEATHERMAP_API_KEY"
 
+
+## Usage
+
+### Fetching and Storing Data
+- Run the first code cell to install any missing packages and import libraries.
+- Ensure that Step 0 (API setup) and Step 1 (database creation) execute without errors.
+- In Step 2, verify that the test request for Tokyo returns a valid response.
+- Run the cell that defines the list of cities and loops through each, fetching weather data and inserting it into the SQLite database.
+
+### Data Analysis & Visualization
+- Execute the cell that reads from SQLite into a pandas DataFrame.
+- Run the cells that:
+  - Convert temperature units from Kelvin to Fahrenheit.
+  - Compute top 5 hottest and coldest cities and plot bar charts.
+  - Aggregate average wind speed by weather status and plot another chart.
+  - Identify the most favorable weather city and summarize observations.
+- Inspect the generated charts and summary to draw insights.
+
+## Results
+- **Hottest Cities**: Displays the five cities currently experiencing the highest temperatures, with bar chart visualization.
+- **Coldest Cities**: Displays the five cities with the lowest temperatures.
+- **Wind Speed by Weather**: Bar chart showing how average wind speed varies across different weather conditions (for example, clear, broken clouds, rain).
+- **Most Favorable Weather**: Identifies the single city (for example, Los Angeles, US) that offers the most comfortable combination of temperature, weather status, and wind speed at runtime.
+
+![Example: Top 5 Hottest Cities](./images/hottest_cities.png)
+
+![Example: Average Wind Speed by Weather Status](./images/wind_by_weather.png)
+
+## Extending This Project
+- **Additional Metrics**: Compute humidity or “feels like” temperature comparisons.
+- **Time Series Analysis**: Schedule this notebook to run daily (for example, via cron or GitHub Actions), store historical data, and visualize trends over time.
+- **Geospatial Mapping**: Use libraries like folium or plotly to map cities colored by temperature or wind speed.
+- **User Input**: Allow interactive selection of cities or date-range filters via Jupyter widgets.
+
+## License
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for more details.
+
